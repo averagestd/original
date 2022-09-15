@@ -1,4 +1,4 @@
-//#include <stdio.h>      //#号表示预处理语句，在编译之前处理
+//#include <stdio.h>      //#鍙疯〃绀洪澶勭悊璇彞锛屽湪缂栬瘧涔嬪墠澶勭悊
 
 //int main()
 //{
@@ -11,7 +11,7 @@
 //	return 0;
 //}
 #define  _CRT_SECURE_NO_WARNINGS 1
-#include <stdio.h>       //standard input & output 缩写
+#include <stdio.h>       //standard input & output 缂╁啓
 
 int main()
 {
