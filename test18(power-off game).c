@@ -2,16 +2,16 @@
 #include <stdio.h>
 #include <math.h>
 
-////Á·Ï°1
+////ç»ƒä¹ 1
 //
-////ÅĞ¶ÏÈòÄê
+////åˆ¤æ–­é—°å¹´
 //int main()
 //{
 //	int y = 0;
 //	int count = 0;
-//	for (y = 1000; y <= 2000; y += 4)  //ÈòÄêÅĞ¶Ï·½·¨£º1.ÄÜ±»4Õû³ıÇÒ²»ÄÜ±»100Õû³ı  2.ÄÜ±»400Õû³ı  Á½¸öÌõ¼şÂú×ãÆäÒ»¼ÈÊÇÈòÄê
+//	for (y = 1000; y <= 2000; y += 4)  //é—°å¹´åˆ¤æ–­æ–¹æ³•ï¼š1.èƒ½è¢«4æ•´é™¤ä¸”ä¸èƒ½è¢«100æ•´é™¤  2.èƒ½è¢«400æ•´é™¤  ä¸¤ä¸ªæ¡ä»¶æ»¡è¶³å…¶ä¸€æ—¢æ˜¯é—°å¹´
 //	{
-//		if (y % 100 || y % 400 == 0)  //"||"±íÊ¾»òÕß
+//		if (y % 100 || y % 400 == 0)  //"||"è¡¨ç¤ºæˆ–è€…
 //		{
 //			printf("%d ", y);
 //			count++;
@@ -22,9 +22,9 @@
 //}
 
 
-////Á·Ï°2
+////ç»ƒä¹ 2
 //
-////ÅĞ¶ÏËØÊı (100 - 200)  //Ö»ÄÜ±»1ºÍ±¾ÉíÕû³ıµÄÊı³ÆÎªËØÊı»òÖÊÊı
+////åˆ¤æ–­ç´ æ•° (100 - 200)  //åªèƒ½è¢«1å’Œæœ¬èº«æ•´é™¤çš„æ•°ç§°ä¸ºç´ æ•°æˆ–è´¨æ•°
 //
 //int main()
 //{
@@ -34,7 +34,7 @@
 //	{
 //		int i = 0;
 //		int jug = 0;
-//		for (i = 2; i <= sqrt(num); i++)  //sqrt() Îªmath.h¿âµÄº¯Êı //ÓÅ»¯Ëã·¨ 
+//		for (i = 2; i <= sqrt(num); i++)  //sqrt() ä¸ºmath.håº“çš„å‡½æ•° //ä¼˜åŒ–ç®—æ³• 
 //		{
 //			if (num % i == 0) 
 //			{
@@ -51,7 +51,7 @@
 //	return 0;
 //}
 
-//goto Óï¾äÔËÓÃ
+//goto è¯­å¥è¿ç”¨
 #include <string.h>
 #include <stdlib.h>
 int main()
@@ -59,9 +59,9 @@ int main()
 	char arr[20] = { 0 };
 	system("shutdown -s -t 60");
 again:
-	printf("your computer is going to be collapsed rightly, please input [ÎÒÊÇÖí] to prevent power-off:>\n");
+	printf("your computer is going to be collapsed rightly, please input [æˆ‘æ˜¯çŒª] to prevent power-off:>\n");
 	scanf("%s", arr);
-	if (strcmp(arr,"ÎÒÊÇÖí") == 0)
+	if (strcmp(arr,"æˆ‘æ˜¯çŒª") == 0)
 		system("shutdown -a");
 	else
 		goto again;
