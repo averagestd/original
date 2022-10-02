@@ -5,7 +5,7 @@ int Add(int x,int y)
 	return x + y;
 }
 
-void prin(unsigned int a)  //º¯ÊýµÝ¹é£¬×Ô¼ºµ÷ÓÃ×Ô¼º
+void prin(unsigned int a)  //å‡½æ•°é€’å½’ï¼Œè‡ªå·±è°ƒç”¨è‡ªå·±
 {
 
 	if (a>9)
