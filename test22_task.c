@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-//ÇàÍÜÌøÌ¨½×  //Î´Íê³É
+//é’è›™è·³å°é˜¶  //æœªå®Œæˆ
 int jump_times(int n)
 {
 	if (n > 2)
@@ -13,7 +13,7 @@ int jump_times(int n)
 		return n;
 }
 
-//×÷Òµ£º×Ö·û´®ÄæĞò  //Î´Íê³É
+//ä½œä¸šï¼šå­—ç¬¦ä¸²é€†åº  
 int my_strlen(char* a)
 {
 	int count = 0;
@@ -25,7 +25,7 @@ int my_strlen(char* a)
 	return count;
 }
 
-////Ñ­»·Ğ´·¨
+////å¾ªç¯å†™æ³•
 //
 //void reverse_string(char* string)
 //{
@@ -41,7 +41,7 @@ int my_strlen(char* a)
 //	}
 //}
 
-//µİ¹éĞ´·¨
+//é€’å½’å†™æ³•
 
 void reverse_string(char* str)
 {
@@ -56,7 +56,7 @@ void reverse_string(char* str)
 	str[sz] = mid;
 }
 
-//×÷Òµ£º¼ÆËãÒ»¸öÊıµÄÃ¿Î»Ö®ºÍ
+//ä½œä¸šï¼šè®¡ç®—ä¸€ä¸ªæ•°çš„æ¯ä½ä¹‹å’Œ
 
 int sum_v(int x)
 {
@@ -67,7 +67,7 @@ int sum_v(int x)
 	return x;
 }
 
-//×÷Òµ£º¼ÆËãnµÄk´Î·½
+//ä½œä¸šï¼šè®¡ç®—nçš„kæ¬¡æ–¹
 
 double nk(int n,int k)
 {
@@ -81,11 +81,11 @@ double nk(int n,int k)
 	}
 	else
 	{
-		return 1.0 / nk(n, -k);  //Ö¸ÊıÎª¸ºÊıÇé¿ö
+		return 1.0 / nk(n, -k);  //æŒ‡æ•°ä¸ºè´Ÿæ•°æƒ…å†µ
 	}
 }
 
-//ì³²¨ÄÇÆõÊıÁĞ
+//æ–æ³¢é‚£å¥‘æ•°åˆ—
 
 int Feib(int n)
 {
@@ -109,7 +109,7 @@ int main()
 	//printf("the means of jump: %d\n", jump_times(a));
 	//printf("%d ", sum_v(a));
 	printf("%lf ", nk(a,k));
-	//printf("µÚ%d¸öì³²¨ÄÇÆõÊıÎª£º%d\n",a, Feib(a));
+	//printf("ç¬¬%dä¸ªæ–æ³¢é‚£å¥‘æ•°ä¸ºï¼š%d\n",a, Feib(a));
 	//reverse_string(arr);
 	//printf("%s", arr);
 	return 0;
