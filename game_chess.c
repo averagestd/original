@@ -90,7 +90,7 @@ void AI_Procd(char place[ROW][COL], int row, int col)
 		int x = rand() % ROW;
 		int y = rand() % COL;
 		int i = 0;
-		//ÖÇÄÜÀ¹½ØÊµÏÖ
+		//æ™ºèƒ½æ‹¦æˆªå®ç°
 		for (i = 0; i < row; i++)
 		{
 			if (((place[i][0] == place[i][1] || place[i][1] == place[i][2]) && place[i][1] != ' '))
@@ -135,14 +135,14 @@ char Judg(char place[ROW][COL], int row, int col)
 		int j = 0;
 		for (j = 0; j < col; j++)
 		{
-			//ºáÈıĞĞÅĞ¶Ï
+			//æ¨ªä¸‰è¡Œåˆ¤æ–­
 			
-			//ÊúÈıĞĞÅĞ¶Ï
+			//ç«–ä¸‰è¡Œåˆ¤æ–­
 			if (place[0][j] == place[1][j] && place[1][j] == place[2][j] && place[0][j] != ' ')
 			{
 				return place[0][j];
 			}
-			//Ğ±Á½ĞĞÅĞ¶Ï
+			//æ–œä¸¤è¡Œåˆ¤æ–­
 			if (((place[0][0] == place[1][1] && place[1][1] == place[2][2]) || (place[0][2] == place[1][1] && place[1][1] == place[2][0])) && place[1][1] != ' ')
 			{
 				return place[1][1];
