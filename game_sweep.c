@@ -24,7 +24,7 @@ void Distri_Board(int boar[ROW][COL], int row, int col, int rowor, int color)
 			boar[i][j] = 0;
 		}
 
-		//Ëæ»ú¸öÊı£¬Ëæ»ú·ÖÅä
+		//éšæœºä¸ªæ•°ï¼Œéšæœºåˆ†é…
 
 		//for (j = 0; j < col; j++)
 		//{
@@ -62,7 +62,7 @@ void Distri_Board(int boar[ROW][COL], int row, int col, int rowor, int color)
 		}
 	}
 
-	////²âÊÔÀ×·Ö²¼
+	////æµ‹è¯•é›·åˆ†å¸ƒ
 	//for (i = 0; i < row; i++)
 	//{
 	//	int j = 0;
@@ -91,7 +91,7 @@ void Init_Board(char boar[ROW_OR][COL_OR], int row, int col)
 
 void Display_Board(char boar[ROW_OR][COL_OR], int row, int col)
 {
-	printf("----------- É¨À×ÓÎÏ· -----------\n");
+	printf("----------- æ‰«é›·æ¸¸æˆ -----------\n");
 	printf("0  1  2  3  4  5  6  7  8  9\n\n");
 	int i = 0;
 	for (i = 0; i < row; i++)
@@ -104,10 +104,10 @@ void Display_Board(char boar[ROW_OR][COL_OR], int row, int col)
 		}
 		printf("\n\n");
 	}
-	printf("----------- É¨À×ÓÎÏ· -----------\n");
+	printf("----------- æ‰«é›·æ¸¸æˆ -----------\n");
 }
 
-//´Ëº¯Êı¹¦ÄÜ²»¹»µ¥Ò»£¬ÈçÒª¸ü¸Ä±È½ÏÀ§ÄÑ£¬ÍùºóĞè×¢Òâ´ËÎÊÌâ
+//æ­¤å‡½æ•°åŠŸèƒ½ä¸å¤Ÿå•ä¸€ï¼Œå¦‚è¦æ›´æ”¹æ¯”è¾ƒå›°éš¾ï¼Œå¾€åéœ€æ³¨æ„æ­¤é—®é¢˜
 
 int Player_Discov(int boar[ROW][COL], char obser_boar[ROW_OR][COL_OR], int row, int col, int i, int j)
 {
@@ -117,7 +117,7 @@ int Player_Discov(int boar[ROW][COL], char obser_boar[ROW_OR][COL_OR], int row, 
 		if (boar[i][j])
 		{
 			obser_boar[i - 1][j - 1] = '!';
-			printf("Äã±»Õ¨ËÀÁË£¡\n");
+			printf("ä½ è¢«ç‚¸æ­»äº†ï¼\n");
 			return 0;
 		}
 		if (boar[i][j] == 0)
